@@ -1,0 +1,9 @@
+package com.dao;
+
+/**
+ * @author giveu
+ *
+ */
+public class QuestionDao {
+
+}

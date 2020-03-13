@@ -1,0 +1,20 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.connection.ConnectionClass;
+import com.model.ComputerQuestionPojo;
+import com.model.MathQuestionPojo;
+
+public class ComputerQuestionDao {
+
+	
+	public static int createQuestion(ComputerQuestionPojo add1) throws ClassNotFoundException, SQLException
+    {
+  	  
+  	  Connection con=ConnectionClass.createConnection();
+	
+}
+}
+

@@ -1,0 +1,39 @@
+package com.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.model.RegisterPojo;
+
+/**
+ * Servlet implementation class Register
+ */
+/**
+ * @author giveu
+ *
+ */
+@WebServlet("/Register")
+public class Register extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	        
+		String firstName=request.getParameter("Fname");
+		String lastName=request.getParameter("Lname");
+	    String USerName=request.getParameter("Uname");
+	    String Email=request.getParameter("Email");
+		String Gender=request.getParameter("Gender");
+		String Password=request.getParameter("Pass");
+		String Con_Password=request.getParameter("Con_Pass");
+		
+		RegisterPojo register=new RegisterPojo();
+		register.setFirstName(firstName);
+		
+		
+	}
+
+}

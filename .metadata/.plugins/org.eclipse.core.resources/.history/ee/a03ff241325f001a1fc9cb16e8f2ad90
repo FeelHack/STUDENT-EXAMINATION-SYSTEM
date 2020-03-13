@@ -1,0 +1,18 @@
+package com.dao;
+
+import com.connection.ConnectionClass;
+
+/**
+ * @author giveu
+ *
+ */
+public class RegisterDao {
+
+	   public static int registerCustomer()
+	   {
+		   Connection con=ConnectionClass.createConnection()
+		return 0;
+		   
+	   }
+	  
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="com.model.LoginPojo"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.dao.LoginDao"/>
+<fullyQualifiedTypeName name="com.model.RegisterPojo"/>
+<fullyQualifiedTypeName name="com.dao.RegisterDao"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.connection.ConnectionClass"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.model.QuestionPojo"/>
+<fullyQualifiedTypeName name="com.dao.QuestionDao"/>
+<fullyQualifiedTypeName name="com.model.ComputerQuestionPojo"/>
+<fullyQualifiedTypeName name="com.dao.ComputerQuestionDao"/>
+<fullyQualifiedTypeName name="com.dao.GkQuestionDao"/>
+<fullyQualifiedTypeName name="com.model.GkQuestionPojo"/>
+</qualifiedTypeNameHistroy>

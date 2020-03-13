@@ -1,0 +1,39 @@
+package com.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class QuestionCreate
+ */
+/**
+ * @author giveu
+ *
+ *
+ */
+@WebServlet("/com.controller.QuestionCreate")
+public class QuestionCreate extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+   
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		  String serial_No=request.getParameter("Sl");
+	      String question=request.getParameter("Question");
+	      String option1=request.getParameter("Op1");
+	      String option2=request.getParameter("Op2");
+	      String option3=request.getParameter("Op3");
+	      String option4=request.getParameter("Op4");
+	      String answer=request.getParameter("Ans");
+	      
+	      
+	      
+	    
+	      
+	}
+
+}

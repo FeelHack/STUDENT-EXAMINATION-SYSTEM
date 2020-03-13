@@ -1,0 +1,12 @@
+package com.dao;
+
+/**
+ * @author giveu
+ *
+ *Logic for Add Question To Database
+ *
+ *
+ */
+public class QuestionDao {
+
+}

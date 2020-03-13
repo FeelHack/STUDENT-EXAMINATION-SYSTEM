@@ -1,0 +1,15 @@
+package com.dao;
+
+/**
+ * @author giveu
+ *
+ */
+public class RegisterDao {
+
+	   public static int registerCustomer()
+	   {
+		return 0;
+		   
+	   }
+	  
+}

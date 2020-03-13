@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+       
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Question</title>
+</head>
+<body>
+       <jsp:include page="../homeHeader.jsp"></jsp:include>
+        
+        
+        <pre>
+            <form action="com.controller.QuestionCreate" method="post">
+            
+            <label>Enter Serial Number</label>
+            <input type="text" name="Sl">
+            <label>Enter Question</label>
+            <input type="text" name="Question">
+            <label>Option1</label>
+            <input type="text" name="Op1">
+            <label>Option2</label>
+            <input type="text" name="Op2">
+            <label>Option3</label>
+            <input type="text" name="Op3">
+            <label>Option4</label>
+            <input type="text" name="Op4">
+         
+            
+            
+            </form>
+        </pre>
+        
+         
+</body>
+</html>

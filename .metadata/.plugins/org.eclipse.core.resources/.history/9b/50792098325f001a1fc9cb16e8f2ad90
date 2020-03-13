@@ -1,0 +1,22 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.connection.ConnectionClass;
+
+/**
+ * @author giveu
+ *
+ */
+public class RegisterDao {
+
+	   public static int registerCustomer() throws ClassNotFoundException, SQLException
+	   {
+		   Connection con=ConnectionClass.createConnection();
+		   String qry="insert into Register(FirstName,LastName,USerName,Email,Gender,Password,Con_Password)values();"
+		return 0;
+		   
+	   }
+	  
+}

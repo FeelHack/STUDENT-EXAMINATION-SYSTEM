@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    
+<%@page import="java.sql.Connection" %>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="com.connection.ConnectionClass" %>
+   
+  
+    <jsp:include page="homeHeader.jsp"></jsp:include>
+    
+    
+    <%            
+    Connection con=ConnectionClass.createConnection();
+    PreparedStatement pst=con.prepareStatement("select *from Question");
+    ResultSet rs=pst.executeQuery();
+            
+    while(rs.next())
+    {
+ 	   %>
+              
+                    <p> <%=rs.getString("SerialNo") %></p>
+                    <p></p>
+              
+   <%} %>       

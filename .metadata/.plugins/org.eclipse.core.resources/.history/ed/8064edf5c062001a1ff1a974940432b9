@@ -1,0 +1,14 @@
+package com.model;
+
+public class QuestionCreate {
+
+      private String serial No;
+    <th>Question</th>
+    <th>Option1</th>
+    <th>Option2</th>
+    <th>Option3</th>
+    <th>Option4</th>
+    <th>Answer</th>
+	
+	
+}

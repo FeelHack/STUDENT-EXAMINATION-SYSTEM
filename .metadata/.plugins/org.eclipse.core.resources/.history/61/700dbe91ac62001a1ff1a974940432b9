@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@page import="java.sql.Connection" %>
+<%@page import="com.connection.ConnectionClass" %>  
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>View Question</title>
+</head>
+<body>
+         <jsp:include page="../homeHeader.jsp"></jsp:include>
+         
+         
+         <table>
+                <tr>
+            		 <th>Serial No </th>
+            		 <th>Question</th>
+            		 <th>Option1</th>
+            		 <th>Unit_Price</th>
+            	     <th>Mrp_Of_Unit</th>
+            		 <th>Action</th>     
+               </tr>    
+         
+         <%
+         Connection con=ConnectionClass.createConnection();
+         String qry="select *from Question";
+         
+         %>
+        
+</body>
+</html>

@@ -1,0 +1,8 @@
+package com.model;
+
+public class QuestionDao {
+
+	private String serialNo;
+	private String question;
+	
+}

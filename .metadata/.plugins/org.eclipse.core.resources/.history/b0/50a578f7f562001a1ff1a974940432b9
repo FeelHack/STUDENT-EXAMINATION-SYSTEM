@@ -1,0 +1,31 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.connection.ConnectionClass;
+import com.model.QuestionPojo;
+
+/**
+ * @author giveu
+ *
+ *         Logic for Add Question To Database
+ *
+ *
+ */
+public class QuestionDao {
+
+	      public static int createQuestion(QuestionPojo add) throws ClassNotFoundException, SQLException
+	      {
+	    	  
+	    	  Connection con=ConnectionClass.createConnection();
+	    	  String qry="insert into Question(SerialNo,Question,Option1,Option2,Option3,Option4,Answer)values(?,?,?,?,?,?,?)";
+	    	  PreparedStatement pst=con.prepareStatement(qry);
+	    	  pst.setString(1, add.getSerialNo());
+	    	  pst.setString(2, add.getQuestion());
+	    	  
+			return 0;
+	    	  
+	      }
+}

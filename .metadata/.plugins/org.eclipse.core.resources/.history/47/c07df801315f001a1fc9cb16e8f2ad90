@@ -1,0 +1,16 @@
+package com.model;
+
+/**
+ * @author giveu
+ *
+ */
+public class RegisterPojo {
+       
+	private String FirstName;
+	private String LastName;
+	private String USerName;
+	private String Email;
+	private String Gender;
+	private String Password;
+	private String Con_Password;
+}

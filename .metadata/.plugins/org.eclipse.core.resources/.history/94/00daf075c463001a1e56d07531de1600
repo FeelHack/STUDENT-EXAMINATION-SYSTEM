@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    
+<%@page import="java.sql.Connection" %>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="com.connection.ConnectionClass" %>
+   
+  
+    <jsp:include page="homeHeader.jsp"></jsp:include>
+    
+    
+    <%            
+    Connection con=ConnectionClass.createConnection();
+    PreparedStatement pst=con.prepareStatement("select *from Question limit 4");
+    ResultSet rs=pst.executeQuery();
+    out.print("<form action='result.jsp' method='post'>");        
+    while(rs.next())
+    {
+ 	   %>
+              
+            out.print(<%=rs.getString("SerialNo")%>+<%=rs.getString("Question") %><br>
+            <input type="radio" name=<%=rs.getString("") %> value=<%=rs.getString("") %>><%=rs.getString("Option1") %><br>
+            <input type="radio" name=<%=rs.getString("") %> value=<%=rs.getString("") %>><%=rs.getString("Option2") %><br>
+            <input type="radio" name=<%=rs.getString("") %> value=<%=rs.getString("") %>><%=rs.getString("Option3") %><br>
+            <input type="radio" name=<%=rs.getString("") %> value=<%=rs.getString("") %>><%=rs.getString("Option4") %><br>
+            );
+   <%} 
+           out.print("<input type='submit' >");
+   %>

@@ -1,0 +1,26 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.connection.ConnectionClass;
+
+/**
+ * @author giveu
+ *
+ *         Logic for Add Question To Database
+ *
+ *
+ */
+public class QuestionDao {
+
+	      public static int createQuestion() throws ClassNotFoundException, SQLException
+	      {
+	    	  
+	    	  Connection con=ConnectionClass.createConnection();
+	    	  String qry=
+	    	  
+			return 0;
+	    	  
+	      }
+}

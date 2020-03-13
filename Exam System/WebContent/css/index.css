@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------------- */
+/* Navbar Css Start */
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: grey;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: #4CAF50;
+}
+/* Navbar Css End */
+/* ------------------------------- */
+
+/* Main Section Css Start */
+
+/* Main Section Css End  */
+
+/* ------------------------------------------------- */
+/* Footer Css Part  Start*/
+.Footer {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+/* Footer Css End */
+/* --------------------------------------------------- */
+
+
+
+ 

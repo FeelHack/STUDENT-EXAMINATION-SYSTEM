@@ -1,0 +1,10 @@
+
+ /* Database Name =Student*/
+ use Student_System;
+ drop table Register;
+ create table Register(FirstName varchar(50), LastName varchar(50),UserName varchar(50), Email varchar(50),Gender varchar(50),Password varchar(50), Con_Password varchar(50));
+ insert into Register(FirstName,LastName,USerName,Email,Gender,Password,Con_Password)values("Omm Prakash","Das","FeelViral","Omm@gmail.com","Male","Feel767","Feel767");
+ select *from Register;
+ ----------------------	
+ select *from Admin;
+ select *from Admin where Email="Sanjay@gmail.com" and password="Sanjay1997";

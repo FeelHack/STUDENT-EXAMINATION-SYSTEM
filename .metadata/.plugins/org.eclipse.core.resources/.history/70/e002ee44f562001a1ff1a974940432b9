@@ -1,0 +1,24 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import com.connection.ConnectionClass;
+
+/**
+ * @author giveu
+ *
+ *         Logic for Add Question To Database
+ *
+ *
+ */
+public class QuestionDao {
+
+	      public static int createQuestion()
+	      {
+	    	  
+	    	  Connection con=ConnectionClass.createConnection();
+	    	  
+			return 0;
+	    	  
+	      }
+}
